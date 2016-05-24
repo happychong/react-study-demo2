@@ -4,7 +4,7 @@
   "description": "boilerplate",
   "main": "app/index.jsx",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --progress",
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --history-api-fallback",
     "build": "./node_modules/.bin/webpack --progress --colors --config webpack.prod.config.js",
     "lint": "./node_modules/.bin/eslint app",
     "clean": "rm -rf build/*",
@@ -43,8 +43,10 @@
   "dependencies": {
     "better-npm-run": "0.0.8",
     "bootstrap": "^3.3.6",
+    "history": "^2.1.1",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "react-router": "^2.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
