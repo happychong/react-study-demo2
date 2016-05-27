@@ -13,7 +13,8 @@ class SearchGithub extends Component {
     this.usernameRef.value = '';
 
     const path = `/profile/${username}`;
-    browserHistory.push(path);
+    browserHistory.push(path)
+
   }
   render(){
     return (
